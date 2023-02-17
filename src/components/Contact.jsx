@@ -55,35 +55,35 @@ export const Contact = () => {
           <div className="contact__form-container">
             <form action="#" className="contact__form" onSubmit={handleForm}>
               <div className="contact__form-field">
-                <label className="contact__form-label" for="name">Nombre</label>
+                <label className="contact__form-label" htmlFor="name">Nombre</label>
                 <input
                   placeholder="Ingrese Su Nombre"
                   type="text"
                   className="contact__form-input"
                   name="name"
                   id="name"
-                  autocomplete="off"
+                  autoComplete="off"
                   value={values.name}
                   onChange={handleInputChange}
                 />
                 {validate === true &&  !values.name && <p className='error_message'>Debe ingresar un nombre valido.</p>}
               </div>
               <div className="contact__form-field">
-                <label className="contact__form-label" for="email">Email</label>
+                <label className="contact__form-label" htmlFor="email">Email</label>
                 <input
                   placeholder="Ingrese Su Nombre"
                   type="text"
                   className="contact__form-input"
                   name="email"
                   id="email"
-                  autocomplete="off"
+                  autoComplete="off"
                   value={values.email}
                   onChange={handleInputChange}
                 />
                 {validate === true && mailValidation === false && <p className='error_message'>Debe ingresar un email valido.</p>}
               </div>
               <div className="contact__form-field">
-                <label className="contact__form-label" for="message">Mensaje</label>
+                <label className="contact__form-label" htmlFor="message">Mensaje</label>
                 <textarea
                   cols="30"
                   rows="10"
@@ -91,7 +91,7 @@ export const Contact = () => {
                   placeholder="Ingrese Su Nombre"
                   name="message"
                   id="message"
-                  autocomplete="off"
+                  autoComplete="off"
                   value={values.message}
                   onChange={handleInputChange}
                 ></textarea>
