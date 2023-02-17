@@ -80,7 +80,7 @@ export const Contact = () => {
                   value={values.email}
                   onChange={handleInputChange}
                 />
-                {validate === true && mailValidation == false && <p className='error_message'>Debe ingresar un email valido.</p>}
+                {validate === true && mailValidation === false && <p className='error_message'>Debe ingresar un email valido.</p>}
               </div>
               <div className="contact__form-field">
                 <label className="contact__form-label" for="message">Mensaje</label>
