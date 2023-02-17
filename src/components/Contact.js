@@ -34,7 +34,7 @@ export const Contact = () => {
   const handleForm = (e) => {
     e.preventDefault();
     setValidate(true);
-    if(values.name && mailValidation == true && values.message){
+    if(values.name && mailValidation === true && values.message){
       emailjs.sendForm("service_2adn4qg","template_bbejjgg",e.target,"9lkmUyUuS6TrPmYdK")    
       Swal.fire(
         'Mensaje Enviado!',
@@ -66,7 +66,7 @@ export const Contact = () => {
                   value={values.name}
                   onChange={handleInputChange}
                 />
-                {validate == true &&  !values.name && <p className='error_message'>Debe ingresar un nombre valido.</p>}
+                {validate === true &&  !values.name && <p className='error_message'>Debe ingresar un nombre valido.</p>}
               </div>
               <div className="contact__form-field">
                 <label className="contact__form-label" for="email">Email</label>
@@ -80,7 +80,7 @@ export const Contact = () => {
                   value={values.email}
                   onChange={handleInputChange}
                 />
-                {validate == true && mailValidation == false && <p className='error_message'>Debe ingresar un email valido.</p>}
+                {validate === true && mailValidation == false && <p className='error_message'>Debe ingresar un email valido.</p>}
               </div>
               <div className="contact__form-field">
                 <label className="contact__form-label" for="message">Mensaje</label>
@@ -95,7 +95,7 @@ export const Contact = () => {
                   value={values.message}
                   onChange={handleInputChange}
                 ></textarea>
-                {validate == true && !values.message && <p className='error_message'>Debe ingresar un mensaje valido.</p>}
+                {validate === true && !values.message && <p className='error_message'>Debe ingresar un mensaje valido.</p>}
               </div>
               <button type="submit" className="btn btn--theme contact__btn">
                 Enviar
