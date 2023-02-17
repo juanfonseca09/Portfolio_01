@@ -10,6 +10,7 @@ export const SocialMedia = () => {
               src="http://localhost:3000/png/linkedin-ico.png"
               alt="icon"
               className="home-hero__social-icon"
+              rel="noreferrer"
             />
           </a>
         </div>
@@ -19,6 +20,7 @@ export const SocialMedia = () => {
               src="http://localhost:3000/png/github-ico.png"
               alt="icon"
               className="home-hero__social-icon"
+              rel="noreferrer"
             />
           </a>
         </div>
@@ -32,6 +34,7 @@ export const SocialMedia = () => {
               src="http://localhost:3000/png/insta-ico.png"
               alt="icon"
               className="home-hero__social-icon"
+              rel="noreferrer"
             />
           </a>
         </div>
