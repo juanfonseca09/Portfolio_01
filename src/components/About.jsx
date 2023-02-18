@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import { NavLink } from 'react-router-dom'
 
 export const About = () => {
   return (   
@@ -24,9 +25,7 @@ export const About = () => {
                 No dudes en ponerte en <strong> contacto </strong> conmigo haciendo click aqui.
               </p>
             </div>
-            <a href="./contact" className="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
+            <NavLink to="/contact" className="btn btn--med btn--theme dynamicBgClr"> Contacto </NavLink>
           </div>
           <div className="about__content-skills">
             <h3 className="about__content-title">My Skills</h3>
