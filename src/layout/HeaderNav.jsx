@@ -8,7 +8,7 @@ export const HeaderNav = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="https://github.com/juanfonseca09/Portfolio_01/public/png/perfil.png"
+              src="https://juan-fonseca-portfolio.netlify.app/perfil.png"
               className="header__logo-img"
             />
           </div>
