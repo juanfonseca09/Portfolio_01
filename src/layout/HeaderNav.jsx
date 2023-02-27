@@ -8,8 +8,9 @@ export const HeaderNav = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="./public/png/perfil.png"
+              src="/public/png/perfil.png"
               className="header__logo-img"
+              rel="noreferrer"
             />
           </div>
           <span className="header__logo-sub">Juan Fonseca</span>
