@@ -8,7 +8,7 @@ export const HeaderNav = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="/public/png/perfil.png"
+              src="/png/perfil.png"
               className="header__logo-img"
               rel="noreferrer"
             />
