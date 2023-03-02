@@ -1,16 +1,27 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
 
 export const HeaderNav = () => {
+
+  const [active, setActive] = useState('header__sm-menu');
+  const [icon, setIcon] = useState('header__main-ham-menu');
+  const [icon2, setIcon2] = useState('header__main-ham-menu-close d-none');
+  
+  const navToggle = () => {
+    (active === 'header__sm-menu--active') ? setActive('header__sm-menu') : setActive('header__sm-menu--active');
+    (icon === 'header__main-ham-menu') ? (setIcon2('header__main-ham-menu-close'), setIcon('header__main-ham-menu d-none'))
+    : (setIcon('header__main-ham-menu'), setIcon2('header__main-ham-menu-close d-none'));
+  };
+
   return (
     <header className="header">
       <div className="header__content">
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="/png/perfil.png"
+              src="http://localhost:3000/png/perfil.png"
               className="header__logo-img"
-              rel="noreferrer"
             />
           </div>
           <span className="header__logo-sub">Juan Fonseca</span>
@@ -30,37 +41,37 @@ export const HeaderNav = () => {
             <NavLink to="/contact" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Contact </NavLink>
             </li>
           </ul>
-          <div className="header__main-ham-menu-cont">
+          <div onClick= {()=> {navToggle()}} className="header__main-ham-menu-cont">
             <img
-              src="./assets/svg/ham-menu.svg"
+              src="http://localhost:3000/svg/ham-menu.svg"
               alt="hamburger menu"
-              className="header__main-ham-menu"
+              className={icon}
             />
             <img
-              src="./assets/svg/ham-menu-close.svg"
+              src="http://localhost:3000/svg/ham-menu-close.svg"
               alt="hamburger menu close"
-              className="header__main-ham-menu-close d-none"
+              className={icon2}
             />
           </div>
         </div>
       </div>
-      <div className="header__sm-menu">
+      <div className={active}>
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <NavLink to="/home" onClick={()=> {navToggle()}}> Home </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <NavLink to="/about"onClick={()=> {navToggle()}}> About </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <NavLink to="/proyects" onClick={()=> {navToggle()}}> Proyects </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <NavLink to="/contact" onClick={()=> {navToggle()}}> Contact </NavLink>
             </li>
           </ul>
         </div>
