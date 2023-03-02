@@ -37,13 +37,13 @@ export const HeaderNav = () => {
               <NavLink to="/home" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Home </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/about" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> About </NavLink>
+            <NavLink to="/about" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Acerca de Mi </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/projects" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Projects </NavLink>
+            <NavLink to="/projects" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Proyectos </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/contact" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Contact </NavLink>
+            <NavLink to="/contact" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Contacto </NavLink>
             </li>
           </ul>
           <div onClick= {()=> {navToggle()}} className="header__main-ham-menu-cont">
@@ -68,15 +68,15 @@ export const HeaderNav = () => {
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/about"onClick={()=> {navToggle()}}> About </NavLink>
+              <NavLink to="/about"onClick={()=> {navToggle()}}> Acerca de Mi </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/proyects" onClick={()=> {navToggle()}}> Proyects </NavLink>
+              <NavLink to="/proyects" onClick={()=> {navToggle()}}> Proyectos </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/contact" onClick={()=> {navToggle()}}> Contact </NavLink>
+              <NavLink to="/contact" onClick={()=> {navToggle()}}> Contacto </NavLink>
             </li>
           </ul>
         </div>
