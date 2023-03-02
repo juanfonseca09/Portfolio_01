@@ -10,8 +10,7 @@ export const HeaderNav = () => {
   
   const navToggle = () => {
     (active === 'header__sm-menu--active') ? setActive('header__sm-menu') : setActive('header__sm-menu--active');
-    (icon === 'header__main-ham-menu') ? (setIcon2('header__main-ham-menu-close'), setIcon('header__main-ham-menu d-none'))
-    : (setIcon('header__main-ham-menu'), setIcon2('header__main-ham-menu-close d-none'));
+    (icon === 'header__main-ham-menu') ? (setIcon2('header__main-ham-menu-close'), setIcon('header__main-ham-menu d-none')) : (setIcon('header__main-ham-menu'), setIcon2('header__main-ham-menu-close d-none'));
   };
 
   return (
