@@ -29,7 +29,7 @@ export const HeaderNav = () => {
               className="header__logo-img"
             />
           </div>
-          <span className="header__logo-sub">Juan Fonseca</span>
+          <NavLink to="/about" className="header__logo-sub">Juan Fonseca</NavLink>
         </div>
         <div className="header__main">
           <ul className="header__links">
