@@ -49,12 +49,12 @@ export const HeaderNav = () => {
           </ul>
           <div onClick= {()=> {navToggle()}} className="header__main-ham-menu-cont">
             <img
-              src="http://localhost:3000/svg/ham-menu.svg"
+              src="/svg/ham-menu.svg"
               alt="hamburger menu"
               className={icon}
             />
             <img
-              src="http://localhost:3000/svg/ham-menu-close.svg"
+              src="/svg/ham-menu-close.svg"
               alt="hamburger menu close"
               className={icon2}
             />
