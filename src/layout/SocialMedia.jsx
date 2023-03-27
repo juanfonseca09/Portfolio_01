@@ -7,7 +7,7 @@ export const SocialMedia = () => {
         <div className="home-hero__social">
           <a href="https://www.linkedin.com/in/jafv2022/" className="home-hero__social-icon-link" target="_blank">
             <img
-              src="http://localhost:3000/png/linkedin-ico.png"
+              src="/png/linkedin-ico.png"
               alt="icon"
               className="home-hero__social-icon"
               rel="noreferrer"
@@ -17,7 +17,7 @@ export const SocialMedia = () => {
         <div className="home-hero__social">
           <a href="https://github.com/juanfonseca09" className="home-hero__social-icon-link" target="_blank">
             <img
-              src="http://localhost:3000/png/github-ico.png"
+              src="/png/github-ico.png"
               alt="icon"
               className="home-hero__social-icon"
               rel="noreferrer"
@@ -31,7 +31,7 @@ export const SocialMedia = () => {
             target="_blank"
           >
             <img
-              src="http://localhost:3000/png/insta-ico.png"
+              src="/png/insta-ico.png"
               alt="icon"
               className="home-hero__social-icon"
               rel="noreferrer"

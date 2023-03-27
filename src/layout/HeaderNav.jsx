@@ -25,7 +25,7 @@ export const HeaderNav = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="http://localhost:3000/png/perfil.png"
+              src="/png/perfil.png"
               className="header__logo-img"
             />
           </div>
