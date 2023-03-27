@@ -25,9 +25,8 @@ export const HeaderNav = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="/png/perfil.png"
+              src="http://localhost:3000/png/perfil.png"
               className="header__logo-img"
-              rel="noreferrer"
             />
           </div>
           <NavLink to="/about" className="header__logo-sub">Juan Fonseca</NavLink>
@@ -38,23 +37,23 @@ export const HeaderNav = () => {
               <NavLink to="/home" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Home </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/about" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Acerca de Mi </NavLink>
+            <NavLink to="/about" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> About </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/projects" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Proyectos </NavLink>
+            <NavLink to="/projects" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Projects </NavLink>
             </li>
             <li className="header__link-wrapper">
-            <NavLink to="/contact" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Contacto </NavLink>
+            <NavLink to="/contact" className={({isActive}) => isActive? "header__link__active header__link" : "header__link"}> Contact </NavLink>
             </li>
           </ul>
           <div onClick= {()=> {navToggle()}} className="header__main-ham-menu-cont">
             <img
-              src="/svg/ham-menu.svg"
+              src="http://localhost:3000/svg/ham-menu.svg"
               alt="hamburger menu"
               className={icon}
             />
             <img
-              src="/svg/ham-menu-close.svg"
+              src="http://localhost:3000/svg/ham-menu-close.svg"
               alt="hamburger menu close"
               className={icon2}
             />
@@ -69,15 +68,15 @@ export const HeaderNav = () => {
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/about"onClick={()=> {navToggle()}}> Acerca de Mi </NavLink>
+              <NavLink to="/about"onClick={()=> {navToggle()}}> About </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/proyects" onClick={()=> {navToggle()}}> Proyectos </NavLink>
+              <NavLink to="/proyects" onClick={()=> {navToggle()}}> Proyects </NavLink>
             </li>
 
             <li className="header__sm-menu-link">
-              <NavLink to="/contact" onClick={()=> {navToggle()}}> Contacto </NavLink>
+              <NavLink to="/contact" onClick={()=> {navToggle()}}> Contact </NavLink>
             </li>
           </ul>
         </div>
