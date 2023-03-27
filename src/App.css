@@ -545,61 +545,64 @@ textarea {
 .works{
   display: flex;
   flex-wrap: wrap;
+  margin-left: 5%; 
+  margin-right: 5%; 
 }
 
 .work-item{
  flex-basis: 30%;
   flex-grow: 1;
   margin: 30px;
+  margin-top: 5%;
+  margin-right: 5%;
 }
 
 .work-item .mask{
-  width: 100%;
+  width: 80%;
   height: 350px;
   overflow: hidden;
   border: 1px solid #ddd;
   box-shadow: 0px 5px 15px #ddd;
+  margin-top: 5%;
+  margin-right: 5%;
 }
 
 .work-item img{
-  width: 120%;
+  width: 110%;
   transition: all 500ms;
 }
 
 .work-item .mask:hover img{
-  width: 150%;
-  margin-right: 30%;
+  width: 120%;
+  margin-right: 10%;
 
 }
 
 .work-item span{
   display: block;
-  color: grey;
-  margin-top: 35px;
+  color: #fff;
+  margin-bottom: 1%;
+  padding-top: 1%;
 }
 
 .work-item h2{
   display: block;
   font-size: 30px;
-  color: #000;
+  color: #fff;
   margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.work-item a{
-  color: #000;
-  text-decoration: none;
+  margin-bottom: 5px;
   transition: 300ms;
 }
 
-.work-item a:hover{
+.work-item h2:hover{
+  text-decoration: none;
   color: #0062b9;
 }
 
 .work-item h3{
   display: block;
   border-top: 1px soli #ddd;
-  padding-top: 15px;
-  color: gray;
+  padding-top: 1%;
+  color: #fff;
   margin-top: 0px;
 }
